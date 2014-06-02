@@ -4,11 +4,16 @@
 </head>
 
 <body>
-<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCadastro(); return false;">
   <table width="625" border="0">
     <tr>
-      <td width="69">Nome:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+      <td width="69">Nome Completo:</td>
+      <td width="546"><input name="nomeCompleto" type="text" id="nome" size="70" maxlength="60" />
+        <span class="style1">*</span></td>
+    </tr>
+<tr>
+      <td width="69">Nome Cracha:</td>
+      <td width="546"><input name="nomeCracha" type="text" id="nome" size="70" maxlength="60" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -23,8 +28,21 @@
     </tr>
     <tr>
       <td>EJ:</td>
-      <td><input name="ej" type="text" id="ej" size="35" maxlength="35" />
-<span class="style3">*</span></td>
+      <td><select name="idEj" id="idEj">
+	<option>Selecione...</option>
+	<option value="1">Ej 1</option>
+        <option value="002">Ej 2</option>
+        <option value="003">Ej 3</option>
+        <option value="004">Ej 4</option>
+        <option value="005">Ej 5</option>
+        <option value="006">Ej 6</option>
+        <option value="007">Ej 7</option>
+        <option value="008">Ej 8</option>
+        <option value="009">Ej 9</option>
+        <option value="010">Ej 10</option>
+        <option value="011">Ej 11</option>
+	</select>	
+	<span class="style1">*      </span></td>
 	</tr>
 	<tr>
 	<td>Cargo:</td>
@@ -32,10 +50,19 @@
 	<span class="style3">*</span></td>
     </tr>
     <tr>
-      <td>Cidade:</td>
+      <td>CPF:</td>
       <td><input name="cidade" type="text" id="cidade" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
+	<tr>
+	<td>Federação:</td>
+	<td><select name="federacao" id="federecao">
+		<option>Selecione...</opition>
+		<option value="1">Federada</option>
+        	<option value="0">Não federada</option>
+	</select>
+	<span class="style1">*      </span></td>
+	</tr>
     <tr>
       <td>Estado:</td>
       <td><select name="estado" id="estado">
@@ -69,6 +96,28 @@
           </select>
         <span class="style1">*      </span></td>
     </tr>
+	<tr>
+	<td>Tempo de MEJ:</td>
+	<td><select name="federacao" id="federecao">
+		<option>Selecione...</opition>
+		<option value="1">1 ano</option>
+		<option value="2">2 anos</option>
+		<option value="3">3 anos</option>
+        	<option value="4">4 anos ou mais</option>
+	</select>
+	<span class="style1">*      </span></td>
+	</tr>
+<tr>
+	<td>Quarto:</td>
+	<td><select name="federacao" id="federecao">
+		<option>Selecione...</opition>
+		<option value="001">Quarto 1</option>
+		<option value="002">Quarto 2</option>
+		<option value="003">Quarto 3</option>
+        	<option value="004">Quarto 4</option>
+	</select>
+	<span class="style1">*      </span></td>
+	</tr>
         <tr>
       <td>Senha:</td>
       <td><input name="senha" type="password" id="senha" maxlength="12" />

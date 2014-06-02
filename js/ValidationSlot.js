@@ -1,8 +1,20 @@
-function validaCampo()
+function validaCadastro()
 {
-if(document.cadastro.nome.value=="")
+if(document.cadastro.nomeCompleto.value=="")
 	{
 	alert("O Campo nome é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.nomeCracha.value=="")
+	{
+	alert("O Campo email é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.telefone.value=="")
+	{
+	alert("O Campo email é obrigatório!");
 	return false;
 	}
 else
@@ -12,7 +24,7 @@ else
 	return false;
 	}
 else
-	if(document.cadastro.cidade.value=="")
+	if(document.cadastro.cpf.value=="")
 	{
 	alert("O Campo Cidade é obrigatório!");
 	return false;
@@ -35,7 +47,24 @@ else
 	alert("O Campo Login é obrigatório!");
 	return false;
 	}
-else	
+else
+	if(document.cadastro.federacao.value=="")
+	{
+	alert("O Campo email é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.tempoMej.value=="")
+	{
+	alert("O Campo email é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.idQuarto.value=="")
+	{
+	alert("O Campo email é obrigatório!");
+	return false;
+	}
 if(document.cadastro.senha.value=="")
 	{
 	alert("Digite uma senha!");

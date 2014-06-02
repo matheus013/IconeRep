@@ -2,17 +2,17 @@
 <body>
 <?php 
 // RECEBENDO OS DADOS PREENCHIDOS DO FORMULÁRIO !
-$nomeCompleto	= $_POST ["nomeCompleto"];
-$nomeCracha	= $_POST ["nomeCracha"];
-$email	= $_POST ["email"];	
-$tel	= $_POST ["telefone"];	
-$estado	= $_POST ["estado"];	
-$cpf = $_POST["cpf"];
-$idEj     = $_POST ["idEj"];
-$cargo  = $_POST ["cargo"];
-$federacao = $_POST["federacao"];
-$tempoMej = $_POST["tempoMej"];
-$senha  = $_POST ["senha"];
+$nomeCompleto	= $_POST ["nomeCompleto"]; //ok
+$nomeCracha	= $_POST ["nomeCracha"]; //ok
+$email	= $_POST ["email"];	//ok
+$tel	= $_POST ["telefone"];	//ok
+$estado	= $_POST ["estado"];	//ok
+$cpf = $_POST["cpf"];//ok
+$idEj     = $_POST ["idEj"];//ok
+$cargo  = $_POST ["cargo"];//ok
+$federacao = $_POST["federacao"];//ok
+$tempoMej = $_POST["tempoMej"];//ok
+$senha  = $_POST ["senha"];//ok
 $idQuarto = $_POST["idQuarto"];
 //Gravando no banco de dados !
 
