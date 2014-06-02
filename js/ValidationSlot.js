@@ -1,10 +1,33 @@
 function validaHotel() {
-if(document.hotel.nomeHotel.value == ""){
-    alert("O Campo nome é obrigatório!");
-    return false
+    if (document.hotel.nomeHotel.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
+    if (document.hotel.endereco.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
 }
-}
+function validaRoom() {
+    if (document.room.quarto.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false;
+    }
+    else
+    if (document.room.vagas.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false;
+    }
+    else
+    if (document.room.idHotel.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false;
+    }
+    else
 
+}
 function validaCadastro() {
     if (document.cadastro.nomeCompleto.value == "") {
         alert("O Campo nome é obrigatório!");
