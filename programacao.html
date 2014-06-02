@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="js/ValidationSlot.js" language="javascript" ></script>  <!-- verificar se todas as variaveis est�o preenchidas -->
+</head>
+<body>
+    <form id="programacao" name="programacao" method="post" action="programacao.php" onsubmit="return validaEvent();
+            return false;">
+        <table width="625" border="0">
+            <tr>
+                <td width="69">Nome do Evento:</td>
+                <td width="546"><input name="nomeProgramacao" type="text" id="nomeProgramacao" size="70" maxlength="60" />
+                    <span class="style1">*</span></td>
+            </tr>
+            <tr>
+                <td width="69">Descrição:</td>
+                <td width="546"><input name="descricao" type="text" id="descricao" size="70" maxlength="60" />
+                    <span class="style1">*</span></td>
+            </tr>
+            <tr>
+                <td width="69">Horario:</td>
+                <td width="546"><input name="horario" type="text" id="horario" size="70" maxlength="60" />
+                    <span class="style1">*</span></td>
+            </tr>
+            <tr>
+                <td width="69">Número de vagas:</td>
+                <td width="546"><input name="numVagas" type="text" id="numVagas" size="70" maxlength="60" />
+                    <span class="style1">*</span></td>
+            </tr>
+            <tr>
+                <td width="69">Certificado</td>
+                <td width="546"><input type="checkbox" name="xmlCertificados" id="xmlCertificados" value="1">
+                    <span class="style1"></span></td>
+            </tr>
+<tr>
+                <td colspan="2"><p>
+                        <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+                        <br />
+                        <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+                        <br />
+                        <span class="style1">* Campos com * s&atilde;o obrigat&oacute;rios!          </span></p>
+                    <p>&nbsp; </p></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

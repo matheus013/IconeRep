@@ -90,4 +90,26 @@ function validaCadastro() {
     else
         return true;
 }
+function validaEvent() {
+    if (document.programacao.nomeProgramacao.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
+    if (document.programacao.descricao.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
+    if (document.programacao.horario.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
+    if (document.programacao.numVagas.value == "") {
+        alert("O Campo nome é obrigatório!");
+        return false
+    }
+    else
 
+}
