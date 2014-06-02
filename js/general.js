@@ -56,4 +56,4 @@ if(document.cadastro.senha.value=="")
 else
 return true;
 }
-<!-- Fim do JavaScript que validará os campos obrigatórios! -->
+// Fim do JavaScript que validará os campos obrigatórios! 
