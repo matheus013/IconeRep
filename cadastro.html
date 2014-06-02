@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="js/ValidationSlot.js" language="javascript" ></script>  <!-- verificar se todas as variaveis estão preenchidas -->
+</head>
+
+<body>
+<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+  <table width="625" border="0">
+    <tr>
+      <td width="69">Nome:</td>
+      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+      <span class="style1">*</span></td>
+    </tr>
+    <tr>
+        <td>Telefone:</td>
+        <td><input name="telefone" type="text" id="telefone" size="15" maxlenght="20"/>
+        <span class="style3">Apenas n&uacute;meros</span></td>
+    </tr>
+    <tr>
+      <td>EJ:</td>
+      <td><input name="ej" type="text" id="ej" size="35" maxlength="35" />
+<span class="style3">*</span></td>
+	</tr>
+	<tr>
+	<td>Cargo:</td>
+	<td><input name="cargo" type="text" id="cargo"size="25" maxlength="35" />
+	<span class="style3">*</span></td>
+    </tr>
+    <tr>
+      <td>Cidade:</td>
+      <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td>Estado:</td>
+      <td><select name="estado" id="estado">
+        <option>Selecione...</option>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="ES">ES</option>
+        <option value="DF">DF</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+          </select>
+        <span class="style1">*      </span></td>
+    </tr>
+        <tr>
+      <td>Senha:</td>
+      <td><input name="senha" type="password" id="senha" maxlength="12" />
+          <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+Desejo receber novidades e informa&ccedil;&otilde;es sobre o conte&uacute;do deste site. </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p>
+        <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+        <br />
+          <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+          <br />
+          <span class="style1">* Campos com * s&atilde;o obrigat&oacute;rios!          </span></p>
+      <p>&nbsp; </p></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
