@@ -2,9 +2,8 @@
 <body>
 <?php
 
-$nome     = $_POST ["nome"];
+$nome     = $_POST ["nomeHotel"];
 $endereco = $_POST ["endereco"];
-$numeroQuartos    = $_POST ["numeroQuartos"];
 
 $conexao = mysql_connect("eneej2014","iconeUFAL");
 if (!$conexao)

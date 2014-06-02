@@ -2,12 +2,12 @@
 <html>
 <script type="text/javascript" src="js/ValidationSlot.js" language="javascript" ></script>  <!-- verificar se todas as variaveis estão preenchidas -->
 <body>
-<form id="Hotel" name="Hotel" method="post" action="hotel.php" onsubmit="return validaHotel(); return false;">
+<form id="hotel" name="hotel" method="post" action="hotel.php" onsubmit="return validaHotel(); return false;">
 
 <table width="625" border="0">
     <tr>
       <td>Nome:</td>
-      <td><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+      <td><input name="nomeHotel" type="text" id="nomeHotel" size="70" maxlength="60" />
       <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -15,12 +15,7 @@
       <td><input name="endereco" type="text" id="endereco" size="70" maxlength="60" />
       <span class="style1">*</span></td>
     </tr>
-    <tr>
-      <td>Numero de Quartos:</td>
-      <td><input name="nRoom" type="text" id="nRoom" size="10" maxlength="10" />
-      <span class="style1">*</span></td>
-    </tr>
-    <tr>
+     <tr>
       <td colspan="2"><p>
         <input name="cadastrar" type="submit" id="cadastrar" value="Submit" /> 
         <br />

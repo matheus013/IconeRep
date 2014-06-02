@@ -1,4 +1,4 @@
-function validaCampo()
+function validaCadastro()
 {
 if(document.cadastro.nomeCompleto.value=="")
 	{
