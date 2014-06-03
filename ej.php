@@ -5,14 +5,7 @@
 $nomeEJ	= $_POST ["nomeEJ"];
 //Gravando no banco de dados !
 
-//conectando com o localhost - mysql
-$conexao = mysql_connect("eneej2014","iconeUFAL");
-if (!$conexao)
-	die ("Erro de conexão com localhost, o seguinte erro ocorreu -> ".mysql_error());
-//conectando com a tabela do banco de dados
-$banco = mysql_select_db("EJ",$conexao);
-if (!$banco)
-	die ("Erro de conexão com banco de dados, o seguinte erro ocorreu -> ".mysql_error());
+include 'connectDB.php';
 
 $query = "INSERT INTO `EJ` ( `nomeEJ`) 
 VALUES ('$nomeEJ')";
