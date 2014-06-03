@@ -9,7 +9,8 @@ include 'connectDB.php';
 
 // Obtendo informações do usuário
 $query = mysql_query("SELECT * FROM Participante WHERE id = $id");
-$user = mysqli_fetch_array($query);
+
+while( $user = mysqli_fetch_array($query) ){
 ?>
     
 <div id="profile">
@@ -25,7 +26,12 @@ $user = mysqli_fetch_array($query);
 </div>
     
     
-    <?php mysql_close(); ?>
+    <?php 
+    
+    } //encerra o loop while
+    mysql_close(); 
+    
+    ?>
 </body>    
 </html>
 
