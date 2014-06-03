@@ -1,115 +1,57 @@
 function validaHotel() {
-    if (document.hotel.nomeHotel.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false
-    }
-    else
-    if (document.hotel.endereco.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false
-    }
-    else
-}
-function validaRoom() {
-    if (document.room.quarto.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false;
-    }
-    else
-    if (document.room.vagas.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false;
-    }
-    else
-    if (document.room.idHotel.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false;
-    }
-    else
-
-}
-function validaCadastro() {
-    if (document.cadastro.nomeCompleto.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.nomeCracha.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.telefone.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.email.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.cpf.value == "") {
-        alert("O Campo Cidade é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.estado.value == "") {
-        alert("O Campo Estado é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.cargo.value == "") {
-        alert("O Campo país é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.ej.value == "") {
-        alert("O Campo Login é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.federacao.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.tempoMej.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    else
-    if (document.cadastro.idQuarto.value == "") {
-        alert("O Campo email é obrigatório!");
-        return false;
-    }
-    if (document.cadastro.senha.value == "") {
-        alert("Digite uma senha!");
+    if (document.hotel.nomeHotel.value == "" ||
+            document.hotel.endereco.value == "") {
+        alert("Preencher todos os campos obrigatórios!!");
         return false;
     }
     else
         return true;
 }
+function validaRoom() {
+    if (document.room.quarto.value == "" ||
+            document.room.vagas.value == "" ||
+            document.room.idHotel.value == "") {
+        alert("Preencher todos os campos obrigatórios!!");
+        return false;
+    }
+    else
+        return true;
+}
+function validaCadastro() {
+    if (document.cadastro.nomeCompleto.value == "" ||
+            document.cadastro.nomeCracha.value == "" ||
+            document.cadastro.telefone.value == "" ||
+            document.cadastro.email.value == "" ||
+            document.cadastro.cpf.value == "" ||
+            document.cadastro.idEj.value == "" ||
+            document.cadastro.estado.value == "" ||
+            document.cadastro.ej.value == "" ||
+            document.cadastro.cargo.value == "" ||
+            document.cadastro.federacao.value == "" ||
+            document.cadastro.tempoMej.value == "" ||
+            document.cadastro.idQuarto.value == "") {
+        alert("Preencher todos os campos obrigatórios!!");
+        return false;
+    }
+    else {
+        if (document.cadastro.senha.value == "") {
+            alert("Digite uma senha!");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+}
 function validaEvent() {
-    if (document.programacao.nomeProgramacao.value == "") {
-        alert("O Campo nome é obrigatório!");
+    if (document.programacao.nomeProgramacao.value == "" ||
+            document.programacao.descricao.value == "" ||
+            document.programacao.horario.value == "" ||
+            document.programacao.numVagas.value == "") {
+        alert("Preencher todos os campos obrigatórios!!");
         return false
     }
     else
-    if (document.programacao.descricao.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false
-    }
-    else
-    if (document.programacao.horario.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false
-    }
-    else
-    if (document.programacao.numVagas.value == "") {
-        alert("O Campo nome é obrigatório!");
-        return false
-    }
-    else
+        return true;
 
 }

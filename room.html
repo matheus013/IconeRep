@@ -2,7 +2,7 @@
 <html>
     <script type="text/javascript" src="js/ValidationSlot.js" language="javascript" ></script>  <!-- verificar se todas as variaveis estão preenchidas -->
     <body>
-        <form id="room" name="room" method="post" action="room.php" onsubmit="return validaRoom();
+        <form id="room" name="room" method="post" action="quarto.php" onsubmit="return validaRoom();
                 return false;">
 
             <table width="625" border="0">
@@ -20,7 +20,7 @@
                 <tr>
                     <td>Hotel:</td>
                     <td><select name="idHotel" id="idHotel">
-                            <option>Selecione...</option>
+                            <option value="">Selecione...</option>
                             <option value="001">Hotel 1</option>
                             <option value="002">Hotel 2</option>
                             <option value="003">Hotel 3</option>
