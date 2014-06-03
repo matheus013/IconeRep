@@ -5,12 +5,7 @@
 $nome     = $_POST ["nomeHotel"];
 $endereco = $_POST ["endereco"];
 
-$conexao = mysql_connect("eneej2014","iconeUFAL");
-if (!$conexao)
-	die ("Erro de conexão com localhost, o seguinte erro ocorreu -> ".mysql_error());
-$banco = mysql_select_db("Hotel",$conexao);
-if (!$banco)
-	die ("Erro de conexão com banco de dados, o seguinte erro ocorreu -> ".mysql_error());
+include 'connectDB.php';
 
 $query = "INSERT INTO `Hotel` (`nomeHotel`,`endereco`) 
 
