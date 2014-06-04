@@ -1,7 +1,7 @@
 function validaHotel() {
     if (document.hotel.nomeHotel.value == "" ||
             document.hotel.endereco.value == "") {
-        alert("Preencher todos os campos obrigatórios!!");
+        alert("Preencher todos os campos obrigat\u00f3rios!!");
         return false;
     }
     else
@@ -11,7 +11,7 @@ function validaRoom() {
     if (document.room.quarto.value == "" ||
             document.room.vagas.value == "" ||
             document.room.idHotel.value == "") {
-        alert("Preencher todos os campos obrigatórios!!");
+        alert("Preencher todos os campos obrigat\u00f3rios!!");
         return false;
     }
     else
@@ -29,18 +29,15 @@ function validaCadastro() {
             document.cadastro.cargo.value == "" ||
             document.cadastro.federacao.value == "" ||
             document.cadastro.tempoMej.value == "" ||
-            document.cadastro.idQuarto.value == "") {
-        alert("Preencher todos os campos obrigatórios!!");
+            document.cadastro.idQuarto.value == "" ||
+            document.cadastro.senha.value == "") {
+        alert("Preencher todos os campos obrigat\u00f3rios!!");
         return false;
     }
     else {
-        if (document.cadastro.senha.value == "") {
-            alert("Digite uma senha!");
-            return false;
-        }
-        else {
-            return true;
-        }
+
+        return true;
+
     }
 }
 function validaEvent() {
@@ -48,7 +45,7 @@ function validaEvent() {
             document.programacao.descricao.value == "" ||
             document.programacao.horario.value == "" ||
             document.programacao.numVagas.value == "") {
-        alert("Preencher todos os campos obrigatórios!!");
+        alert("Preencher todos os campos obrigat\u00f3rios!!");
         return false
     }
     else
