@@ -1,20 +1,21 @@
 <html>
-<body>
-<?php
+    <body>
+        <?php
+        $nome = $_POST ["nomeHotel"];
+        $endereco = $_POST ["endereco"];
 
-$nome     = $_POST ["nomeHotel"];
-$endereco = $_POST ["endereco"];
+        include 'connectDB.php';
 
-include 'connectDB.php';
+        $query = "INSERT INTO Hotel (nomeHotel,endereco) 
 
-$query = "INSERT INTO `Hotel` (`nomeHotel`,`endereco`) 
-
-	VALUES(´$nome´, ´$endereco´)";
+	VALUES('$nome', '$endereco')";
 
 
-mysql_query($query,$conexao);
+        mysql_query($query, $conexao);
 
-echo "Seu cadastro foi realizado com sucesso!<br>Agradecemos a atenção.";
-?> 
-</body>
+        echo "Seu cadastro foi realizado com sucesso!<br>Agradecemos a atenção.";
+
+        mysql_close();
+        ?> 
+    </body>
 </html>

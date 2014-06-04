@@ -1,22 +1,23 @@
 <html>
-<body>
-<?php
+    <body>
+        <?php
+        $vagas = $_POST ["vagas"];
+        $idHotel = $_POST ["idHotel"];
+        $quarto = $_POST ["quarto"];
 
-$vagas   = $_POST ["vagas"];
-$idHotel = $_POST ["idHotel"];
-$quarto    = $_POST ["quarto"];
 
+        include 'connectDB.php';
 
-include 'connectDB.php';
-
-$query = "INSERT INTO `Quarto` (`numQuarto`,`idHotel`,`numVagas`) 
+        $query = "INSERT INTO Quarto (numQuarto, idHotel, numVagas) 
 
 	VALUES('$quarto', '$idHotel','$vagas')";
 
 
-mysql_query($query,$conexao);
+        mysql_query($query, $conexao);
 
-echo "Seu cadastro foi realizado com sucesso!<br>Agradecemos a atenção.";
-?> 
-</body>
+        echo "Seu cadastro foi realizado com sucesso!<br>Agradecemos a atenção.";
+
+        mysql_close();
+        ?> 
+    </body>
 </html>
