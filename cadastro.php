@@ -14,7 +14,7 @@
         $senha = $_POST ["senha"];
         $idQuarto = $_POST["idQuarto"];
 
-        require("connectDB.php");
+        include 'connectDB.php';
 
         $query = "INSERT INTO Participante (nomeCompleto, nomeCracha, email, telefone,
 				  uf, cpf, federacao, cargo,
