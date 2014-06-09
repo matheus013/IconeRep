@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+    <script type="text/javascript" src="js/ValidationSlot.js" language="javascript" ></script>  <!-- verificar se todas as variaveis estão preenchidas -->
+    <body>
+        <form id="hotel" name="hotel" method="post" action="excluirHotel.php" onsubmit="return validaRHotel();
+                return false;">
+
+            <table width="625" border="0">
+                <tr>
+                    <td>Nome:</td>
+                    <td><select name="idHotel" id="idHotel" size="10">
+                            <option value="">Selecione...</option>
+                            <option value="4">teste</option>
+                            <?php
+                            
+                            while($tbl=mysql_fetch_array(mysql_query("select * idHotel , nome))){
+
+                            $idHotel=$tbl['idHotel'];
+
+                            ?>
+                            <option value=<?php $idHotel=$tbl['idHotel'];?>
+                                    <?php echo $nome=$tbl['nome']; ?></option>
+
+                            <?php } ?>
+
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>
+                            <input name="cadastrar" type="submit" id="cadastrar" value="Submit" /> 
+                            <br />
+                            <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+                            <br />
+                            <span class="style1">* Campos com * s&atilde;o obrigat&oacute;rios!          </span></p>
+                        <p>&nbsp; </p></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
